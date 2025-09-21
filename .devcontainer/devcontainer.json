@@ -13,7 +13,7 @@
             "MY_PRIVATE_SECRET": "${localEnv:MY_PRIVATE_SECRET}"
         }
     },
-    "postStartCommand": "echo 'Secret value during post start: $MY_PRIVATE_SECRET'"
+    "postStartCommand": "figlet 'Secret Demo' && echo '🚀 Devcontainer started!' && echo '📋 Running secret demo...' && demo-secret && echo '✅ Demo complete! Run \"demo-secret\" anytime to see the secret demo.'"
 	// Features add additional features to your environment. See https://containers.dev/features
 	// Beware: features are not supported on all platforms and may have unintended side-effects.
 	// "features": {
